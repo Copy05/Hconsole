@@ -2,6 +2,10 @@
 #include <iostream>
 #include <Windows.h>
 #include <string>
+#include <vector>
+
+constexpr int HCONSOLE_VERSION = 1;
+#define HCONSOLE_FULLVER 1.1
 
 /*
 	The Hconsole Class which contains everything what Hconsole requires
@@ -16,6 +20,22 @@ private:
 	{
 		std::cout << user << std::endl;
 		CMD();
+	}
+
+	void execCMD() {
+		std::string ecmd;
+		std::cout << Vol << ":>exec$ ";
+		std::cin >> ecmd;
+
+		if (ecmd == "return")
+		{
+			std::cout << "Returning..." << std::endl;
+			CMD();
+		}
+		else {
+			std::cout << "Command '" << ecmd << "' not found" << std::endl;
+			execCMD();
+		}
 	}
 
 	void CMD()
@@ -39,6 +59,32 @@ private:
 			std::cin >> newusername;
 			user = newusername;
 			std::cout << "Username changed to " << user << std::endl;
+			CMD();
+		}
+		if (cmd == "exec") {
+			if (isAdmin == AdminStatus::YES) {
+				std::string p;
+				std::cout << "[exec] password for " << user << ": ";
+				std::cin >> p;
+				if (p == pass) {
+					execCMD();
+				}
+				else {
+					std::cout << "wrong password" << std::endl;
+					CMD();
+				}
+			}
+			else {
+				std::cout << "user has not admin permissions" << std::endl;
+				CMD();
+			}
+		}
+		if (cmd == "paswd") {
+			std::string np;
+			std::cout << "set new password for " << user << ": ";
+			std::cin >> np;
+			pass = np;
+			std::cout << "password changed" << std::endl;
 			CMD();
 		}
 		if (cmd == "exit") {
@@ -83,7 +129,8 @@ private:
 	} AdminStatus ;
 
 	char Vol = 'A';
-	short isAdmin = AdminStatus::NO;
+	short isAdmin = AdminStatus::YES;
 	std::string user = "USER";
+	std::string pass = "1234";
 };
 
