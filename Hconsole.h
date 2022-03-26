@@ -23,6 +23,14 @@ private:
 		if (cmd == "whoami") {
 			whoami();
 		}
+		if (cmd == "setusername") {
+			std::string newusername;
+			std::cout << "New username: ";
+			std::cin >> newusername;
+			user = newusername;
+			std::cout << "Username changed to " << user << std::endl;
+			CMD();
+		}
 		if (cmd == "exit") {
 			exit(0);
 		}
@@ -55,7 +63,15 @@ public:
 
 // Private field for all Hconsole variables
 private:
+
+	typedef enum H_adminStatus : short {
+		NO = 0,
+		LIMMITED = 1,
+		YES = 2
+	} AdminStatus ;
+
 	char Vol = 'A';
+	short isAdmin = AdminStatus::NO;
 	std::string user = "USER";
 };
 
