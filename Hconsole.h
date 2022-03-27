@@ -4,7 +4,7 @@
 #include <string>
 
 const int HCONSOLE_VERSION = 1;
-const int BUILD = 8;
+const int BUILD = 9;
 #define HCONSOLE_FULLVER 1.1
 
 /*
@@ -14,29 +14,60 @@ const int BUILD = 8;
 */
 class Hconsole
 {
-// Private field for all commands functions
 private:
-	void whoami()
-	{
-		std::cout << user << std::endl;
-		CMD();
-	}
-
-	void execCMD() {
-		std::string ecmd;
-		std::cout << Vol << ":>exec$ ";
-		std::cin >> ecmd;
-
-		if (ecmd == "return")
+		void echo()
 		{
-			std::cout << "Returning..." << std::endl;
+			std::string ehc;
+			std::cin >> ehc;
+			std::cout << ehc << std::endl;
 			CMD();
 		}
-		else {
-			std::cout << "Command '" << ecmd << "' not found" << std::endl;
-			execCMD();
+
+		void whoami()
+		{
+			std::cout << user << std::endl;
+			CMD();
 		}
-	}
+
+		void execCMD() {
+			std::string ecmd;
+			std::cout << Vol << ":>exec$ ";
+			std::cin >> ecmd;
+
+			if (ecmd == "return")
+			{
+				std::cout << "Returning..." << std::endl;
+				CMD();
+			}
+			else {
+				std::cout << "Command '" << ecmd << "' not found" << std::endl;
+				execCMD();
+			}
+		}
+
+		void setUsername()
+		{
+			std::string newusername;
+			std::cout << "New username: ";
+			std::cin >> newusername;
+			user = newusername;
+			std::cout << "Username changed to " << user << std::endl;
+			CMD();
+		}
+
+		void passwd()
+		{
+			std::string np;
+			std::cout << "set new password for " << user << ": ";
+			std::cin >> np;
+			pass = np;
+			std::cout << "password changed" << std::endl;
+			CMD();
+		}
+
+// Private field for all commands functions
+private:
+	
 
 	void CMD()
 	{
@@ -48,18 +79,10 @@ private:
 			whoami();
 		}
 		if (cmd == "echo") {
-			std::string ehc;
-			std::cin >> ehc;
-			std::cout << ehc << std::endl;
-			CMD();
+			echo();
 		}
 		if (cmd == "setusername") {
-			std::string newusername;
-			std::cout << "New username: ";
-			std::cin >> newusername;
-			user = newusername;
-			std::cout << "Username changed to " << user << std::endl;
-			CMD();
+			setUsername();
 		}
 		if (cmd == "exec") {
 			if (isAdmin == AdminStatus::YES) {
@@ -80,12 +103,7 @@ private:
 			}
 		}
 		if (cmd == "paswd") {
-			std::string np;
-			std::cout << "set new password for " << user << ": ";
-			std::cin >> np;
-			pass = np;
-			std::cout << "password changed" << std::endl;
-			CMD();
+			passwd();
 		}
 		if (cmd == "exit") {
 			exit(0);
@@ -119,7 +137,7 @@ public:
 		vol = Vol;
 		username = user;
 		passwd = pass;
-		if (hasAdmin = false) {
+		if (hasAdmin == false) {
 			isAdmin = AdminStatus::NO;
 		}
 		else {
