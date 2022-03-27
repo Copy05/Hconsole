@@ -2,9 +2,9 @@
 #include <iostream>
 #include <Windows.h>
 #include <string>
-#include <vector>
 
-constexpr int HCONSOLE_VERSION = 1;
+const int HCONSOLE_VERSION = 1;
+const int BUILD = 8;
 #define HCONSOLE_FULLVER 1.1
 
 /*
@@ -91,10 +91,12 @@ private:
 			exit(0);
 		}
 		if (cmd == "help") {
-			std::cout << "HELP			- Shows a list with all avaible commands" << std::endl;
-			std::cout << "WHOAMI		- Shows Who you are                     " << std::endl;
-			std::cout << "SETUSERNAME	- Changes your Hconsole username        " << std::endl;
-			std::cout << "EXIT			- Ends Hconsole                         " << std::endl;
+			std::cout << "HELP			- Shows a list with all avaible commands				" << std::endl;
+			std::cout << "WHOAMI		- Shows Who you are										" << std::endl;
+			std::cout << "SETUSERNAME	- Changes your Hconsole username						" << std::endl;
+			std::cout << "PASWD			- Lets you change your password							" << std::endl;
+			std::cout << "EXEC			- [ADMIN] Lets you execute Hconsole Functions			" << std::endl;
+			std::cout << "EXIT			- Ends Hconsole											" << std::endl;
 			CMD();
 		}
 		else {
@@ -112,10 +114,17 @@ public:
 		CMD();
 	}
 
-	void setVars(char vol, std::string username)
+	void setVars(char vol, std::string username, std::string passwd, bool hasAdmin)
 	{
 		vol = Vol;
 		username = user;
+		passwd = pass;
+		if (hasAdmin = false) {
+			isAdmin = AdminStatus::NO;
+		}
+		else {
+			isAdmin = AdminStatus::YES;
+		}
 	}
 
 // Private field for all Hconsole variables
@@ -129,7 +138,7 @@ private:
 	} AdminStatus ;
 
 	char Vol = 'A';
-	short isAdmin = AdminStatus::YES;
+	short isAdmin = AdminStatus::NO;
 	std::string user = "USER";
 	std::string pass = "1234";
 };
