@@ -4,7 +4,7 @@
 #include <string>
 
 const int HCONSOLE_VERSION = 1;
-const int BUILD = 9;
+const int BUILD = 11;
 #define HCONSOLE_FULLVER 1.1
 
 /*
@@ -15,6 +15,15 @@ const int BUILD = 9;
 class Hconsole
 {
 private:
+
+#pragma region cmd_functions
+
+	// Will be for later useful after i figured out how maps work
+	struct historystructure {
+		std::string cmd;
+		int cmdid;
+	};
+
 		void echo()
 		{
 			std::string ehc;
@@ -65,9 +74,10 @@ private:
 			CMD();
 		}
 
+#pragma endregion
+
 // Private field for all commands functions
 private:
-	
 
 	void CMD()
 	{
