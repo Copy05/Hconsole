@@ -147,7 +147,7 @@ public:
 		vol = Vol;
 		username = user;
 		passwd = pass;
-		if (hasAdmin == false) {
+		if (!hasAdmin) {
 			isAdmin = AdminStatus::NO;
 		}
 		else {
