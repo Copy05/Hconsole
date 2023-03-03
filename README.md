@@ -1,6 +1,21 @@
 # Hconsole
 
-Hconsole is a terminal that is still in development
+Hconsole is a terminal designed for hackers
+
+This project is completely opensource and cross plattform
+
+# Building
+
+first clone the project:
+```bash
+git clone https://github.com/Copy05/Hconsole/
+```
+
+and then compile it for example with `g++`:
+
+```bash
+sudo g++ *.c *.h
+```
 
 # Contribution
 
