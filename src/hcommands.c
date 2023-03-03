@@ -28,17 +28,18 @@ void print_ver(void)
 void handle_cmd(const char* cmd, const char* f, const char* opts)
 {
     if (strcmp(cmd, "help") == 0x00)
-        print_help();
+        print_help(f);
     else if (strcmp(cmd, "exit") == 0x00)
         exit(0x00);
     else
         printf("The command \"%s\" has not been found.\n", cmd);
 }
 
-void print_help(void)
+void print_help(const char* _cmd)
 {
     print_ver();
-    printf("Usage: ./Hconsole [command] [options]\n"
-    "HELP\t\tShows all available commands\n"
-    "EXIT\t\tExits Hconsole\n");
+    printf("Usage: [command] [options]\n"
+        "HELP\t\tShows all available commands\n"
+        "EXIT\t\tExits Hconsole\n"
+        "NETCHECK\t\tChecks if the internet connection is available\n");
 }

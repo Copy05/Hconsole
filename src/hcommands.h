@@ -10,5 +10,6 @@
 
 #pragma once
 
+void print_ver(void);
 void handle_cmd(const char* cmd, const char* f, const char* opts);
-void print_help(void);
+void print_help(const char* _cmd);

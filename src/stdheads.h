@@ -12,9 +12,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <assert.h>
 
-#if LINUX
+#if __unix
 #include <unistd.h>
 #endif
 
