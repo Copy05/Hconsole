@@ -6,17 +6,16 @@
 * (c) Copy05 2020-2023
 * ~~~~~~~~~~~~~[ Author ]~~~~~~~~~~~~~~~~~~~~~~
 *	Copy05 [https://github.com/Copy05/]
+*	MRAXXX [https://github.com/MRAXXX/]
 */
 
-#pragma warning( disable : 6031 )
+#pragma warning( disable : 6031 ) // VS2022
 
 #include "stdheads.h"
 #include "hcommands.h"
 
 int main(int argc, char** argv) {
-	char cmd[128];
-	char f[128];
-	char opts[128];
+	char cmd[0x080], f[0x80], opts[0x80];
 
 	printf("%c]0;%s%c", '\033', "HConsole", '\007');
 
@@ -27,9 +26,9 @@ int main(int argc, char** argv) {
 		handle_cmd(cmd, f, opts);
 
 		// free the arrays for the next use
-		memset(&cmd[0], 0, sizeof(cmd));
-		memset(&f[0], 0, sizeof(f));
-		memset(&opts[0], 0, sizeof(opts));
+		memset(&cmd[0x00], 0x00, sizeof(cmd));
+		memset(&f[0x00], 0x00, sizeof(f));
+		memset(&opts[0x00], 0x00, sizeof(opts));
 	}
 
 	return 0x00;
