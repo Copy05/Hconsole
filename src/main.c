@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 
 	while (1) {
 		#if __unix
-		printf("%shc:~$ ", _print_user());
+		printf("%s@hc:~$ ", _print_user());
 		#else
 		printf("hc:~$ ");
 		#endif
