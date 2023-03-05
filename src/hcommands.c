@@ -6,6 +6,7 @@
 * (c) Copy05 2020-2023
 * ~~~~~~~~~~~~~[ Author ]~~~~~~~~~~~~~~~~~~~~~~
 *   Copy05 [https://github.com/Copy05/]
+*   MRAXXX [https://github.com/MRAXXX/]
 */
 
 #include "hcommands.h"
@@ -40,6 +41,5 @@ void print_help(const char* _cmd)
     print_ver();
     printf("Usage: [command] [options]\n"
         "HELP\t\tShows all available commands\n"
-        "EXIT\t\tExits Hconsole\n"
-        "NETCHECK\t\tChecks if the internet connection is available\n");
+        "EXIT\t\tExits Hconsole\n");
 }
