@@ -15,6 +15,7 @@
 
 #if __unix
 #include <unistd.h>
+#include <pwd.h>
 #endif
 
 typedef unsigned int u32;

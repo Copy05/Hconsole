@@ -13,6 +13,13 @@
 #include "stdheads.h"
 #include "hcommands.h"
 
+#if __unix
+const char* _print_user(){
+	struct passwd *pw = getpwuid(geteuid());
+	return pw ? pw->pw_name : "user";
+}
+#endif
+
 int main(int argc, char** argv) {
 	char cmd[128];
 	char f[128];
@@ -21,7 +28,11 @@ int main(int argc, char** argv) {
 	printf("%c]0;%s%c", '\033', "HConsole", '\007');
 
 	while (1) {
+		#if __unix
+		printf("%shc:~$ ", _print_user());
+		#else
 		printf("hc:~$ ");
+		#endif
 		scanf("%127s%127s%127s", cmd, f, opts);
 
 		handle_cmd(cmd, f, opts);
