@@ -8,7 +8,6 @@
 *   Copy05 [https://github.com/Copy05/]
 */
 
-#pragma once
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
