@@ -9,10 +9,12 @@
 *   MRAXXX [https://github.com/MRAXXX/]
 */
 
+#pragma warning(disable : 4996)
+#pragma warning(disable : 6262)
+
 #include "hcommands.h"
 #include "stdheads.h"
-
-#include <time.h>
+#include "hcsubenum.h"
 
 void print_ver(void)
 {
@@ -32,6 +34,8 @@ void handle_cmd(const char* cmd, const char* f, const char* opts)
         print_help(f);
     else if (strcmp(cmd, "exit") == 0x00)
         exit(0x00);
+    else if (strcmp(cmd, "subenum") == 0x00)
+        subdomain_enumeration(f, opts);
     else
         printf("The command \"%s\" has not been found.\n", cmd);
 }
@@ -39,7 +43,15 @@ void handle_cmd(const char* cmd, const char* f, const char* opts)
 void print_help(const char* _cmd)
 {
     print_ver();
-    printf("Usage: [command] [options]\n"
-        "HELP\t\tShows all available commands\n"
-        "EXIT\t\tExits Hconsole\n");
+
+    if (strcmp(_cmd, "subenum") == 0x00) {
+        printf("Usage: subenum [domain]\n"
+        "[domain]\t\t\t Is the domain you want to scan for subdomains\n");
+    }
+    else {
+        printf("Usage: [command] [options]\n"
+            "HELP\t\tShows all available commands\n"
+            "EXIT\t\tExits Hconsole\n"
+            "SUBENUM\t\tenumerates through the passed domain for subdomains\n");
+    }
 }
