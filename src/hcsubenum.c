@@ -32,9 +32,9 @@ void subdomain_enumeration(const char* f, const char* opts)
         // [0.1] www protocols
         "www", "www1", "www2", "www3", "ww1", "ww2", "ww3", "wwwl", "wwl",
 
-        // [0.2] dev 0 - 28
+        // [0.2] dev 0 - 30
         "dev0", "dev", "dev1", "dev2", "dev3", "dev4", "dev5", "dev6", "dev7", "dev8", "dev9", "dev10", "dev11", "dev12", "dev13", "dev14",
-        "dev15", "dev16", "dev17", "dev18", "dev19", "dev20", "dev21", "dev22", "dev23", "dev24", "dev25", "dev26", "dev27", "dev28",
+        "dev15", "dev16", "dev17", "dev18", "dev19", "dev20", "dev21", "dev22", "dev23", "dev24", "dev25", "dev26", "dev27", "dev28", "dev29", "dev30",
 
         // [0.3] ns 0 - 65
         "ns0", "ns", "ns1", "ns2", "ns3", "ns4", "ns5", "ns6", "ns7", "ns8", "ns9", "ns10", "ns11", "ns12", "ns13", "ns14", "ns15", "ns16",
@@ -67,7 +67,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "admin", "adm", "myadmin", "phpmyadmin", "phpmyadmin1", "phpmyadmin2",
 
         // [0.7] databases
-        "oracle", "azure", "sql", "sql1", "database", "mongodb", "dbadmin", "db", "docker",
+        "oracle", "azure", "sql", "sql1", "database", "mongodb", "dbadmin", "db", "docker", "mariadb",
 
         // [0.8] Store
         "shop", "store", "merch", "estore", "eshop", "order", "checkout", "cart", "pay", "shopping", "sale", "sales", "markt", "market", "marketplace", "deal", "deals", "dealling",
@@ -77,7 +77,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "ssh", "ssl", "dhcp", "inet", "tcp", "voip", "ldap", "dcp", "p2p", "tor", "udp", "dtp", "smtp", "ntp", "proc",
 
         // [0.10] (I)nternet (P)rotocol
-        "ip", "ipv4", "ipv6", "ip4", "ip5", "ips",
+        "internet-protocol", "ip", "ipv4", "ipv6", "ip4", "ip5", "ips",
 
         // [0.11] Livestreaming
         "stream", "yt", "live", "tv", "iptv", "streaming", "sub",
@@ -86,7 +86,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "carrier", "jobs", "work", "carriers", "works", "apply",
 
         // [0.13] mail
-        "exchange", "email", "thunderbird", "mailer", "write", "newmail", "mail0", "mail1", "mail2", "mail3", "e-mail",
+        "exchange", "email", "thunderbird", "mailer", "write", "newmail", "mail0", "mail1", "mail2", "mail3", "mail4", "mail5", "mail6", "mail7", "e-mail",
 
         // File Storages
         "drive", "dropbox", "static", "media", "photos", "video", "mirror", "archive", "pic", "gif", "scripts", "script", "documents", "mirrors", "source",
@@ -105,7 +105,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "netacad", "knowledge",
 
         // [0.19] virtualisation
-        "vm", "virtual", "vcenter", "virtual", "vsphere", "vps", "vpn", "vpn1", "vpn2", "citrix",
+        "vm", "virtual", "vcenter", "virtual", "vsphere", "vps", "vpn", "vpn1", "vpn2", "citrix", "proxmox",
 
         // [0.20] news
         "newsletter", "blogs", "post", "posts", "feed", "article", "newsletter",
@@ -123,7 +123,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "system", "computer", "console", "shell", "root", "fs", "sh", "ping",
 
         // [0.25] NSFW / Dating 
-        "love", "dating", "sex", "xxx", "xx", "18", "cupid", "iloveyou", "wedding", "marrige", "pp", "gambling", "casino", "drugs", "nightlife", "win", "getnow",
+        "love", "dating", "sex", "xxx", "xx", "18", "cupid", "iloveyou", "wedding", "marrige", "pp", "gambling", "casino", "drugs", "nightlife", "win", "getnow", "adults", 
 
         // [0.26] Corperation
         "corp", "corperation", "corperate", "holding", "incorperated", "inc", "llc", "limmited",
@@ -180,7 +180,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "games", "gaming", "play", "arcade", "chess",
 
         // [0.41] Exclusive
-        "pro", "premium", "subscribe", "vip", "mvp", "exclusive", "prime", "unsubscribe", "deluxe", "special", "specials", "expensive", "membership", "pass",
+        "pro", "premium", "subscribe", "vip", "mvp", "exclusive", "prime", "unsubscribe", "deluxe", "special", "specials", "expensive", "membership", "memberships", "pass",
 
         // [0.42] Words for Intern
         "localhost", "intern", "intranet", "hidden", "private",
@@ -192,7 +192,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "manga", "books", "book", "ebook", "ebooks", "art", "artist", "artwork",
 
         // [0.45] HTTPS
-        "get", "404", "0", "124", "16", "64", "8080", "80",
+        "get", "404", "403", "0", "124", "16", "64", "8080", "80",
 
         // DUMMYS
         "test", "test1", "test2", "123", "1234", "abc", "abcd", "gay", "dumb", "idiot", "secret", "dummy", "dummy1", "spam0", "spam", "spam1",
@@ -262,7 +262,10 @@ void subdomain_enumeration(const char* f, const char* opts)
         // AI / Mashine Learning
         "cuda", "ai", "deep", "robot", "robots", "mashine", "mashine-learning",
 
-        "extern", "vs", "preview", "link", "linked", "awp",
+            // Colors
+            "red", "blue", "yellow", "green", "white", "black", "orange", "pink", "purple", "cyan", "gold", "crimson",
+
+        "extern", "vs", "preview", "link", "linked", "awp", "originals", "collections", 
         "local", "cats", "cat", "res", "mc", "now", "transfer", "rate", "rating",
         "contest", "build", "this", "car", "public", "host", "net", "online", "io", "your", "you", "box", "science", "chemie", "thanks", "ocean",
         "carrd", "sender", "auto", "automobility", "direct", "directory", "fresh", "banner", "recieve", "hireme", "heaven", "kitchen", "recept", "sso", "cc",

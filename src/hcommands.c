@@ -47,6 +47,17 @@ void print_help(const char* _cmd)
     if (strcmp(_cmd, "subenum") == 0x00) {
         printf("Usage: subenum [domain]\n"
         "[domain]\t\t\t Is the domain you want to scan for subdomains\n");
+        return;
+    }
+    if (strcmp(_cmd, "help") == 0x00) {
+        printf("Usage: help [cmd]\n"
+            "[cmd]\t\t\t The command you want to get details about it\n");
+        return;
+    }
+    if (strcmp(_cmd, "exit") == 0x00) {
+        printf("Usage: exit\n"
+            "Exits Hconsole\n");
+        return;
     }
     else {
         printf("Usage: [command] [options]\n"
