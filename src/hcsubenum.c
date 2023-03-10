@@ -123,14 +123,14 @@ void subdomain_enumeration(const char* f, const char* opts)
         "system", "computer", "console", "shell", "root", "fs", "sh", "ping",
 
         // [0.25] NSFW / Dating 
-        "love", "dating", "sex", "xxx", "xx", "18", "cupid", "iloveyou", "wedding", "marrige", "pp", "gambling", "casino", "drugs", "nightlife", "win", "getnow", "adults", 
+        "love", "dating", "sex", "porn", "xxx", "xx", "18", "cupid", "iloveyou", "wedding", "marrige", "pp", "gambling", "casino", "drugs", "nightlife", "win", "getnow", "adults", 
 
         // [0.26] Corperation
         "corp", "corperation", "corperate", "holding", "incorperated", "inc", "llc", "limmited",
 
         // [0.27] Developer
         "develop", "developer", "ide", "git", "software", "coding", "code", "scripting", "webdev", "oss", "developers", "xyz", "api", "apis", "docs", "flags", "flag",
-        "opensource", "open-source", "computing", "master", "tools", "dev-buisness",
+        "opensource", "open-source", "computing", "master", "tools", "dev-buisness", "sso", "seo",
 
         // [0.28] Gender
         "male", "female", "man", "woman", "men", "boy", "girl", "boys", "girls", "mother", "father", "mom", "dad",
@@ -145,11 +145,11 @@ void subdomain_enumeration(const char* f, const char* opts)
         "movie", "movies", "entertain", "entertainment", "filming", "recording", "film", "anime", "animations", "animation", "vfx", "sfx", "cgi", "watch",
         "studio", "studios", "tube", "vod", "cam", "cams", "camera", "webcams", "pictures", "cinema", "videos", "trailers", "trailer",
         "film", "films", "productions", "production", "television", "premere", "blockbuster", "primetime", "picture", "player", "stock", "fotos", "digital", "thumb", "sports",
-        "esports", "e-sports", "dvd",
+        "esports", "e-sports", "dvd", "analog",
 
          // [0.32] LINUX
-        "kali", "darwin", "arch", "deb", "debian", "superuser", "linux", "gnu", "apt", "ls", "cd", "dpkg", "mkdir", "rm", "mv", "rmdir", "sudo", "su", "ps", "process", "processes",
-        "touch", "nano", "vi", "vim", "neovim", "systemctl", "cp", "wget",
+        "kali", "ubuntu", "darwin", "arch", "deb", "debian", "superuser", "linux", "gnu", "apt", "ls", "cd", "dpkg", "mkdir", "rm", "mv", "rmdir", "sudo", "su", "ps", "process", "processes",
+        "touch", "nano", "vi", "vim", "neovim", "systemctl", "cp", "wget", "pkill", "kill", "net-tools", "ifconfig",
 
         // [0.33] Regions
         "union", "euro", "europe", "america", "asia", "africa", "australia", "nation", "east", "west", "south", "north", "center", "central", "us-east", "us-west", "us-sorth", "us-north",
@@ -173,7 +173,7 @@ void subdomain_enumeration(const char* f, const char* opts)
 
         // [0.39] Security
         "oauth", "auth", "oauth2", "spy", "spying", "cyber", "cybersecurity", "hacking", "hack", "hacked", "secure", "gateway", "midway-gateway", "proxy0", "proxy", "proxy1", "proxies", "proxy-ratelimmit", "security",
-        "certification", "certifications", "certificates", "cert", "firewall", "tracking", "captcha", "hacker", "gate", "ctf", "sync", "protect", "protection",
+        "certification", "certifications", "certificates", "cert", "firewall", "tracking", "captcha", "hacker", "gate", "ctf0", "ctf", "ctf1", "sync", "protect", "protection",
         "void", "voided", "backup", "monitor", "monitoring", 
 
         // [0.40] Game Entertainment
@@ -235,7 +235,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         // Companies
         "google", "hp", "microsoft", "adobe", "ibm", "apple", "netflix", "cisco", "mgsql", "htb", "ph", "amazon", "xbox", "playstation", "valve", "steam", "ubisoft", "nasa",
         "intel", "amd", "nvidia", "meta", "mg", "siemens", "phillips", "bosch", "unity", "nova", "bk", "kfc", "cinnabon", "nintendo", "unreal", "unreal-engine",
-        "w3", "nfl", "nba", "sony", "nbc", "comcast", "wb", "sme", "wmg", "umg", "nbcuniversal", "bbc", "steampovered", "airlines",
+        "w3", "nfl", "nba", "sony", "nbc", "comcast", "wb", "sme", "wmg", "umg", "nbcuniversal", "bbc", "steampovered", "airlines", "auto", "automobility", "car", "transport",
 
         // Applications
         "todo", "calender", "calculator", "board", "weather", "task", "tasks", "date", "dates", "launch", "launcher", "time", "math", "powerpoint", "excel", "access", "word",
@@ -245,7 +245,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "search", "lab", "labs", "research", "tests", "sample",
 
         // Internal
-        "internal", "printer", "printers", "classified", "personal",
+        "internal", "printer", "printers", "classified", "personal", "disclosed",
 
         // Music gernes
         "edm", "chill", "tropical", "hiphop", "trap", "bass", "house", "deephouse",
@@ -262,13 +262,13 @@ void subdomain_enumeration(const char* f, const char* opts)
         // AI / Mashine Learning
         "cuda", "ai", "deep", "robot", "robots", "mashine", "mashine-learning",
 
-            // Colors
-            "red", "blue", "yellow", "green", "white", "black", "orange", "pink", "purple", "cyan", "gold", "crimson",
+        // Colors
+        "red", "blue", "yellow", "green", "white", "black", "orange", "pink", "purple", "cyan", "gold", "crimson",
 
         "extern", "vs", "preview", "link", "linked", "awp", "originals", "collections", 
-        "local", "cats", "cat", "res", "mc", "now", "transfer", "rate", "rating",
-        "contest", "build", "this", "car", "public", "host", "net", "online", "io", "your", "you", "box", "science", "chemie", "thanks", "ocean",
-        "carrd", "sender", "auto", "automobility", "direct", "directory", "fresh", "banner", "recieve", "hireme", "heaven", "kitchen", "recept", "sso", "cc",
+        "local", "cats", "cat", "res", "mc", "now", "transfer", "rate", "rating", 
+        "contest", "build", "this", "public", "host", "net", "online", "io", "your", "you", "box", "science", "chemie", "thanks", "ocean",
+        "carrd", "sender", "direct", "directory", "fresh", "banner", "recieve", "hireme", "heaven", "kitchen", "recept", "cc",
 
         // Language subdomains
         "intertional", "de", "en", "nl", "jp", "gr", "es", "au", "fr", "us", "uk", "ca", "com", "it", "es", "gg", "at", "ch", "co", "mx", "bg",
@@ -311,5 +311,5 @@ void subdomain_enumeration(const char* f, const char* opts)
     }
 #endif
     clock_t end = clock();
-    printf("%d founded subdomains for %s [%fs]\n", founddomains - 1 , f, (double)(end - begin) / CLOCKS_PER_SEC);
+    printf("%d founded subdomains for %s [%fs]\n", founddomains, f, (double)(end - begin) / CLOCKS_PER_SEC);
 }
