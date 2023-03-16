@@ -8,5 +8,7 @@ else
     exit
 fi
 
-g++ -o hc.out *.c *.h
-echo "Use with caution and responsible!"
+g++ -o hc.out ./src/*.c ./src/*.h
+
+echo "Succsessfully built!"
+echo "Use Hconsole with caution and responsible!"
