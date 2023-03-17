@@ -58,7 +58,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
 
         // Numbers
-        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
 
         // [0.6] most common subdomains
         "about", "mail", "news", "images", "img", "cdn", "ftp", "billing", "landing", "blog", "wiki", "web",
@@ -111,26 +111,27 @@ void subdomain_enumeration(const char* f, const char* opts)
         "newsletter", "blogs", "post", "posts", "feed", "article", "newsletter",
 
         // [0.21] Legal
-        "legal", "privacy", "tos", "cookies", "policy", "police", "law", "rules", "licensing", "license", "gov", "goverment", "copyright",
+        "legal", "privacy", "tos", "cookies", "policy", "police", "law", "rules", "licensing", "license", "gov", "goverment", "copyright", "terms", "urheber", "urheberrecht", "datenschutz",
+        "bgb", "sgb",
 
         // [0.22] hosting
-        "nginx", "apache", "hosting", "bluemix", "server", "server01", "server02", "wordpress", "wp", "wikimedia", "godaddy", "wix", "jimdo",
+        "nginx", "apache", "hosting", "bluemix", "server", "server01", "server02", "server03", "wordpress", "wp", "wikimedia", "godaddy", "wix", "jimdo",
 
         // File Ext
-        "css", "js", "doc", "php", "pdf", "cpp", "c", "html", "style", "svn", "svg",
+        "css", "js", "doc", "php", "pdf", "cpp", "c", "html", "style", "svn", "svg", "jpeg", "jpg", "png",
 
         // [0.24] Shell-related
         "system", "computer", "console", "shell", "root", "fs", "sh", "ping",
 
         // [0.25] NSFW / Dating 
-        "love", "dating", "sex", "porn", "xxx", "xx", "18", "cupid", "iloveyou", "wedding", "marrige", "pp", "gambling", "casino", "drugs", "nightlife", "win", "getnow", "adults", 
+        "love", "dating", "sex", "porn", "xxx", "xx", "18", "cupid", "iloveyou", "wedding", "marrige", "pp", "gambling", "casino", "drugs", "nightlife", "win", "getnow", "adults",
 
         // [0.26] Corperation
         "corp", "corperation", "corperate", "holding", "incorperated", "inc", "llc", "limmited",
 
         // [0.27] Developer
         "develop", "developer", "ide", "git", "software", "coding", "code", "scripting", "webdev", "oss", "developers", "xyz", "api", "apis", "docs", "flags", "flag",
-        "opensource", "open-source", "computing", "master", "tools", "dev-buisness", "sso", "seo",
+        "opensource", "oss", "open-source", "computing", "master", "tools", "dev-buisness", "sso", "seo",
 
         // [0.28] Gender
         "male", "female", "man", "woman", "men", "boy", "girl", "boys", "girls", "mother", "father", "mom", "dad",
@@ -147,13 +148,14 @@ void subdomain_enumeration(const char* f, const char* opts)
         "film", "films", "productions", "production", "television", "premere", "blockbuster", "primetime", "picture", "player", "stock", "fotos", "digital", "thumb", "sports",
         "esports", "e-sports", "dvd", "analog",
 
-         // [0.32] LINUX
+        // [0.32] LINUX
         "kali", "ubuntu", "darwin", "arch", "deb", "debian", "superuser", "linux", "gnu", "apt", "ls", "cd", "dpkg", "mkdir", "rm", "mv", "rmdir", "sudo", "su", "ps", "process", "processes",
         "touch", "nano", "vi", "vim", "neovim", "systemctl", "cp", "wget", "pkill", "kill", "net-tools", "ifconfig",
 
         // [0.33] Regions
         "union", "euro", "europe", "america", "asia", "africa", "australia", "nation", "east", "west", "south", "north", "center", "central", "us-east", "us-west", "us-sorth", "us-north",
-        "eu-sorth", "eu-north", "eu-west", "eu-east", "united", "latin", "earth", "moon", "sun",
+        "eu-sorth", "eu-north", "eu-west", "eu-east", "united", "latin", "earth", "moon", "sun", "us-east-1", "us-east-2", "us-north-1", "us-north-2", "us-west-1", "us-west-2", 
+        "us-sorth-1", "us-sorth-2", "eu-west-1", "eu-west-2", "eu-east-1", "eu-east-2", "eu-sorth-1", "eu-sorth-2", "eu-north-1", "eu-north-2",
 
         // [0.34] Network Related
         "imap", "eth", "ethernet", "loopback", "nat", "nas", "client", "clients", "iot", "nmap", "network", "networks", "internet", "url", "hotspot",
@@ -174,7 +176,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         // [0.39] Security
         "oauth", "auth", "oauth2", "spy", "spying", "cyber", "cybersecurity", "hacking", "hack", "hacked", "secure", "gateway", "midway-gateway", "proxy0", "proxy", "proxy1", "proxies", "proxy-ratelimmit", "security",
         "certification", "certifications", "certificates", "cert", "firewall", "tracking", "captcha", "hacker", "gate", "ctf0", "ctf", "ctf1", "sync", "protect", "protection",
-        "void", "voided", "backup", "monitor", "monitoring", 
+        "void", "voided", "backup", "monitor", "monitoring",
 
         // [0.40] Game Entertainment
         "games", "gaming", "play", "arcade", "chess",
@@ -195,7 +197,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "get", "404", "403", "0", "124", "16", "64", "8080", "80",
 
         // DUMMYS
-        "test", "test1", "test2", "123", "1234", "abc", "abcd", "gay", "dumb", "idiot", "secret", "dummy", "dummy1", "spam0", "spam", "spam1",
+        "test", "test1", "test2", "123", "1234", "abc", "abcd", "abcde", "gay", "dumb", "idiot", "secret", "dummy", "dummy1", "spam0", "spam", "spam1", "spam2",
 
         // Family
         "family", "child", "kids", "children",
@@ -204,13 +206,13 @@ void subdomain_enumeration(const char* f, const char* opts)
         "manager", "settings", "config", "manage", "managment", "my", "controller", "control",
 
         // Finance
-        "finance", "wallet", "bank", "card",
+        "finance", "wallet", "bank", "card", "crypto",
 
         // Version
         "beta", "alpha", "classic", "ver", "version", "old", "new", "nightly", "stable", "unstable", "insiders",
 
         // Document based
-        "copy", "paste", "cut", "office", "edit", "editing", "view",
+        "copy", "paste", "cut", "office", "edit", "editing", "view", "share",
 
         // Cores
         "home", "base", "start", "portal", "core", "kernel", "hub", 
@@ -235,11 +237,11 @@ void subdomain_enumeration(const char* f, const char* opts)
         // Companies
         "google", "hp", "microsoft", "adobe", "ibm", "apple", "netflix", "cisco", "mgsql", "htb", "ph", "amazon", "xbox", "playstation", "valve", "steam", "ubisoft", "nasa",
         "intel", "amd", "nvidia", "meta", "mg", "siemens", "phillips", "bosch", "unity", "nova", "bk", "kfc", "cinnabon", "nintendo", "unreal", "unreal-engine",
-        "w3", "nfl", "nba", "sony", "nbc", "comcast", "wb", "sme", "wmg", "umg", "nbcuniversal", "bbc", "steampovered", "airlines", "auto", "automobility", "car", "transport",
+        "w3", "nfl", "nba", "sony", "nbc", "comcast", "wb", "sme", "wmg", "umg", "nbcuniversal", "bbc", "steampowered", "airlines", "auto", "automobility", "car", "transport",
 
         // Applications
         "todo", "calender", "calculator", "board", "weather", "task", "tasks", "date", "dates", "launch", "launcher", "time", "math", "powerpoint", "excel", "access", "word",
-        "chrome",
+        "chrome", "apex", "minecraft", "roblox",
 
         // Research
         "search", "lab", "labs", "research", "tests", "sample",
@@ -260,7 +262,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "collaboration", "collab", "anydesk", "teamviewer", "team-viewer", "rat",
 
         // AI / Mashine Learning
-        "cuda", "ai", "deep", "robot", "robots", "mashine", "mashine-learning",
+        "cuda", "ai", "deep", "robot", "robots", "mashine", "mashine-learning", "artificial",
 
         // Colors
         "red", "blue", "yellow", "green", "white", "black", "orange", "pink", "purple", "cyan", "gold", "crimson",
@@ -268,7 +270,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "extern", "vs", "preview", "link", "linked", "awp", "originals", "collections", 
         "local", "cats", "cat", "res", "mc", "now", "transfer", "rate", "rating", 
         "contest", "build", "this", "public", "host", "net", "online", "io", "your", "you", "box", "science", "chemie", "thanks", "ocean",
-        "carrd", "sender", "direct", "directory", "fresh", "banner", "recieve", "hireme", "heaven", "kitchen", "recept", "cc",
+        "carrd", "sender", "direct", "directory", "fresh", "banner", "recieve", "hireme", "heaven", "kitchen", "recept", "cc", "idm",
 
         // Language subdomains
         "intertional", "de", "en", "nl", "jp", "gr", "es", "au", "fr", "us", "uk", "ca", "com", "it", "es", "gg", "at", "ch", "co", "mx", "bg",
