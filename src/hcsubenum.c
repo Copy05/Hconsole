@@ -98,7 +98,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "meet", "call", "contact", "chat", "msg", "message", "messager", "slack", "conference",
 
         // Adverticements
-        "promote", "ads", "promo", "promotion", "redirect", "ad", "traffic", "click", "marketing", "opt", "adsense", "admob"
+        "promote", "ads", "promo", "promotion", "redirect", "ad", "traffic", "click", "clicked", "marketing", "opt", "adsense", "admob"
 
         // [0.18] Education
         "edu", "education", "academy", "learn", "learning", "elearning", "uni", "university", "college", "schools", "school", "student", "students", "classroom", "class",
@@ -118,7 +118,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "nginx", "apache", "hosting", "bluemix", "server", "server01", "server02", "server03", "wordpress", "wp", "wikimedia", "godaddy", "wix", "jimdo",
 
         // File Ext
-        "css", "js", "doc", "php", "pdf", "cpp", "c", "html", "style", "svn", "svg", "jpeg", "jpg", "png",
+        "css", "js", "ts", "doc", "php", "pdf", "cpp", "c", "json", "html", "style", "svn", "svg", "jpeg", "jpg", "png",
 
         // [0.24] Shell-related
         "system", "computer", "console", "shell", "root", "fs", "sh", "ping",
@@ -140,7 +140,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "helpdesk", "support", "bugs", "issues", "issue", "report", "forum", "asks", "ask", "ticket", "manual", "gethelp", "infocenter", "service-desk", "servicedesk",
 
         // [0.30] Music Entertainment
-        "music", "radio", "listen", "listening", "songs", "song", "sound", "sounds", "lyrics", "fm", "shuffle", "stage", "instruments", "soundtrack", "soundtracks",
+        "music", "radio", "listen", "listening", "songs", "song", "sound", "sounds", "lyrics", "fm", "vh", "shuffle", "stage", "instruments", "soundtrack", "soundtracks",
 
         // [0.31] Graphical Entertaiment
         "movie", "movies", "entertain", "entertainment", "filming", "recording", "film", "anime", "animations", "animation", "vfx", "sfx", "cgi", "watch",
