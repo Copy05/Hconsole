@@ -71,7 +71,7 @@ void subdomain_enumeration(const char* f, const char* opts)
 
         // [0.8] Store
         "shop", "store", "merch", "estore", "eshop", "order", "checkout", "cart", "pay", "shopping", "sale", "sales", "markt", "market", "marketplace", "deal", "deals", "dealling",
-        "pricing", "shipping", "aparrel", "aparrell", "reseller", "resell", "your-orders", "manage-orders",
+        "pricing", "shipping", "aparrel", "aparrell", "reseller", "resell", "your-orders", "manage-orders", "economy", "eco",
 
         // [0.9] other protocols
         "ssh", "ssl", "dhcp", "inet", "tcp", "voip", "ldap", "dcp", "p2p", "tor", "udp", "dtp", "smtp", "ntp", "proc",
@@ -102,7 +102,7 @@ void subdomain_enumeration(const char* f, const char* opts)
 
         // [0.18] Education
         "edu", "education", "academy", "learn", "learning", "elearning", "uni", "university", "college", "schools", "school", "student", "students", "classroom", "class",
-        "netacad", "knowledge",
+        "netacad", "knowledge", "harvard",
 
         // [0.19] virtualisation
         "vm", "virtual", "vcenter", "virtual", "vsphere", "vps", "vpn", "vpn1", "vpn2", "citrix", "proxmox",
@@ -115,7 +115,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "bgb", "sgb",
 
         // [0.22] hosting
-        "nginx", "apache", "hosting", "bluemix", "server", "server01", "server02", "server03", "wordpress", "wp", "wikimedia", "godaddy", "wix", "jimdo",
+        "nginx", "apache", "hosting", "bluemix", "server", "server01", "server02", "server03", "wordpress", "wp", "wikimedia", "godaddy", "wix", "jimdo", "deno",
 
         // File Ext
         "css", "js", "ts", "doc", "php", "pdf", "cpp", "c", "json", "html", "style", "svn", "svg", "jpeg", "jpg", "png",
