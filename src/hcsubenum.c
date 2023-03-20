@@ -18,6 +18,8 @@
 *
 * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Author ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *   Copy05 [https://github.com/Copy05/]
+*   MRAXXX [https://github.com/MRAXXX/]
+*   const int* [https://github.com/ConstantesInt/]
 */
 
 #pragma warning(disable : 6262)
