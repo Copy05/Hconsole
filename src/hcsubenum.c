@@ -71,7 +71,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "serial0", "serial", "serial1", "serial2", "serial3", "serial4", "serial5", "serial6", "serial7", "serial8", "serial9", "serial10",
 
         // Alphabet
-        "a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+        "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
 
         // Numbers 0 - 20
         "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
@@ -154,7 +154,8 @@ void subdomain_enumeration(const char* f, const char* opts)
         "butt", "puss", "erotic", "erotica", "erotic-clips", "eroclips", "erome", "kissing", "kiss", "redgif", "redtube", 
         "redcontent", "red-content", "whores", "whore", "fembed", "female-bed", 
         "18comic", "18comics", "18-comic", "18-comics", "adultcomics", "erwachsenen-bereich", "xbdsm", "bdsm", "boundage", "fetish", "fetishes",
-        "nude", "nudes", "nudeleak", "nudeleaks", "nude-leak",
+        "nude", "nudes", "nudeleak", "nudeleaks", "nude-leak", "1xxx", "2xxx", "3xxx", "4xxx", "5xxx", "6xxx", "7xxx", "8xxx", "9xxx", "10xxx", "1porn", "2porn", "3porn", "4porn", "5porn", "6porn", "7porn",
+        "8porn", "9porn", "10porn",
 
         // NSFW: Erotic Manga / Hentai
         "hentai", "nhentai", "erohentai", "hentaimanga",
