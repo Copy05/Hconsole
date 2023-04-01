@@ -129,7 +129,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "vm", "virtual", "vcenter", "virtual", "vsphere", "vps", "vpn0", "vpn", "vpn1", "vpn2", "citrix", "proxmox",
 
         // [0.20] news
-        "newsletter", "blogs", "post", "posts", "feed", "article", "newsletter", "agent", "agents", 
+        "newsletter", "blogs", "devblogs", "post", "posts", "feed", "article", "newsletter", "agent", "agents", 
 
         // [0.21] Legal
         "legal", "privacy", "tos", "cookies", "policy", "police", "law", "rules", "licensing", "license", "gov", "goverment", "copyright", "terms", "urheber", "urheberrecht", "datenschutz",
