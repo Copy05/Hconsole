@@ -348,11 +348,11 @@ void subdomain_enumeration(const char* f, const char* opts)
 #if __unix
     for (int i = 0; i < arrc; i++) {
         char cmd[0x080];
-        strcpy(cmd, "ping -c 1");
+        strcpy(cmd, "ping -c1");
         strcat(cmd, subdomains[i]);
         strcat(cmd, ".");
         strcat(cmd, f);
-        strcat(cmd, " > /dev/null");
+        strcat(cmd, " > /dev/null > 2>&1");
 
         if (system(cmd) == 0x00) {
             printf("%s.%s\n", subdomains[i], f);
