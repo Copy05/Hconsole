@@ -24,7 +24,11 @@
 * https://github.com/RPiList/specials/
 * https://www.google.com/
 * https://www.nmmapper.com/sys/tools/subdomainfinder/
-* 
+*
+* ~~~~~~~~~~~~~~~~~~~~~[ Specific Sources ]~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*
+* https://www.lumendatabase.org/notices/33501029
+*
 * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Author ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * 
 *   Copy05 [https://github.com/Copy05/]
