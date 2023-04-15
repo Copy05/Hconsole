@@ -74,7 +74,10 @@ void subdomain_enumeration(const char* f, const char* opts)
 
         // Alphabet
         "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", 
-        "b", "c", "d", "e", "f", "ff", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "zz", "zzz",
+        "b", "c", "d", "e", "f", "ff", "g", "h", "j", "k", 
+        "l", "l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8", "l9", "l10",
+        "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", 
+        "z", "zz", "zzz",
         
         // Numbers 0 - 20
         "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
@@ -327,7 +330,8 @@ void subdomain_enumeration(const char* f, const char* opts)
         "torvalds", "copy05", "copy2005", "billgates", "dp", "dudeperfect", "dude-perfect",
         
         // Common Piracy
-        "psyduck-beak", "asdasd", "x2a32", "lu23xx", "lu-x23", "lu32", "lu23s", "lord-u32", "lord-u37", "lord-i17", "ghhffffhhnn", "gghhgghhg", "dradis1",
+        "psyduck-beak", "asdasd", "x2a32", "lu23xx", "lu-x23", "lu32", "lu23s", "lord-u32", "lord-u37", "lord-i17", "ghhffffhhnn", "gghhgghhg", "dradis1", "s3-t10", "s1-t01", 
+        "tpb", "x1337x", "x1337", "1337x", "premiumuk", "premiumusa", "ainventc", "snutritioe", "multiplyoq", "wcharminga", "giantyg", "obsoletekj", "bspringh", "embarrsio", "outrageomj", "kextendh", "agabbyf", "wsoaliku", "jabusiveb", "kdreamd", "returntb", "jfeelingi", "fretfulpa", "dispensad",
         "ru1", "ru2", "ru3", "ru4", "ru5", "ru6", "ru7", "ru8", "ru9", "ru10",
         "hhd-1", "hhd-2", "hhd-3", "hhd-4", "hhd-5", "hhd-6",
         "piracy", "pirat", "priate", "piratebay", "pirate-bay", "kinovod0", "kinovod", "kinovod1", "animevod", "lostfilms", "lordfilms", "torret",
