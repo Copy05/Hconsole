@@ -43,7 +43,9 @@ void subdomain_enumeration(const char* f, const char* opts)
     /* It's messy */
     char subdomains[][64] = {
         // [0.1] www protocols
-        "www", "www1", "www2", "www3", "ww1", "ww2", "ww3", "ww4", "ww5", "ww6", "ww7", "wwwl", "wwl", "wwv", "wwv1", "wwv2", "wwv3",
+        "www", "www1", "www2", "www3", "www4", "www5", "www6", "www7", "www8", "www9", "www10"
+        "ww1", "ww2", "ww3", "ww4", "ww5", "ww6", "ww7", 
+        "wwwl", "wwl", "wwv", "wwv1", "wwv2", "wwv3",
 
         // [0.2] dev 0 - 30
         "dev0", "dev", "dev1", "dev2", "dev3", "dev4", "dev5", "dev6", "dev7", "dev8", "dev9", "dev10", "dev11", "dev12", "dev13", "dev14",
@@ -71,15 +73,16 @@ void subdomain_enumeration(const char* f, const char* opts)
         "serial0", "serial", "serial1", "serial2", "serial3", "serial4", "serial5", "serial6", "serial7", "serial8", "serial9", "serial10",
 
         // Alphabet
-        "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-
+        "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", 
+        "b", "c", "d", "e", "f", "ff", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "zz", "zzz",
+        
         // Numbers 0 - 20
         "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
         "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
 
-        // Years 2000 - 2026
+        // Years 2000 - 2030
         "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020",
-        "2021", "2022", "2023", "2024", "2025", "2026",
+        "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030",
 
         // [0.6] Most common subdomains
         "about", "mail", "news", "images", "img", "cdn", "ftp", "billing", "landing", "blog", "wiki", "web",
@@ -227,7 +230,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         // [0.39] Security
         "oauth", "auth", "oauth2", "spy", "spying", "cyber", "cybersecurity", "hacking", "hack", "hacked", "secure", "gateway", "midway-gateway", "proxy0", "proxy", "proxy1", "proxies", "proxy-ratelimmit", "security",
         "certification", "certifications", "certificates", "certificated", "cert", "firewall", "tracking", "captcha", "hacker", "gate", "ctf0", "ctf", "ctf1", "ctf2", "ctf3", "ctf4",
-        "sync", "protect", "protection", "void", "voided", "backup", "monitor", "monitoring", "ransomware", "spyware", "adware", "trojan", "trojanhorse", "trojan-horse", "malware",
+        "sync", "protect", "protection", "void", "voided", "backup", "monitor", "monitoring", "ransomware", "spyware", "adware", "trojan", "trojanhorse", "trojan-horse", "malware", "checkip",
 
         // [0.40] Game Entertainment
         "games", "gaming", "play", "arcade", "chess",
@@ -325,13 +328,18 @@ void subdomain_enumeration(const char* f, const char* opts)
 
         // Names
         "torvalds", "copy05", "copy2005", "billgates", "dp", "dudeperfect", "dude-perfect",
+        
+        // Common Piracy
+        "psyduck-beak", "asdasd", "x2a32", "lu23xx", "lu-x23", "lu32", "lu23s", "lord-u32", "lord-u37", "lord-i17", "ghhffffhhnn", "gghhgghhg", "dradis1",
+        "ru1", "ru2", "ru3", "ru4", "ru5", "ru6", "ru7", "ru8", "ru9", "ru10",
+        "hhd-1", "hhd-2", "hhd-3", "hhd-4", "hhd-5", "hhd-6",
 
         // Misc
         "extern", "vs", "preview", "link", "linked", "awp", "originals", "collections", 
         "local", "cats", "cat", "res", "mc", "now", "transfer", "rate", "rating", 
         "contest", "build", "this", "public", "host", "net", "online", "io", "your", "you", "box", "science", "chemie", "thanks", "ocean",
         "carrd", "sender", "direct", "directory", "fresh", "banner", "recieve", "heaven", "kitchen", "recept", "cc", "idm", 
-        "lu23xx", "lu-x23", "lu32", "lu23s", "lord-u32", "lord-u37", "lord-i17", "idss", "ides", "ess", "iss", "filmy", "filmymeet", "ching",
+        "idss", "ides", "ess", "iss", "filmy", "filmymeet", "ching",
         "ching-chong", "hellish", "hell", "yts", "ssyt", "vortex0", "vortex", "vortex1", "watson", "v8", "go", "lineup",
 
         // Language subdomains
@@ -346,7 +354,11 @@ void subdomain_enumeration(const char* f, const char* opts)
     printf("Following subdomains has been found for %s\n", f);
 
 #if __unix
-    for (int i = 0; i < arrc; i++) {
+    
+    // The Feature isn't fixed yet!!
+    printf("This feature is currently only available on Windows\n");
+    
+    /*for (int i = 0; i < arrc; i++) {
         char cmd[0x080];
         strcpy(cmd, "ping -c1");
         strcat(cmd, subdomains[i]);
@@ -358,7 +370,7 @@ void subdomain_enumeration(const char* f, const char* opts)
             printf("%s.%s\n", subdomains[i], f);
             founddomains++;
         }
-    }
+    }*/
 #else
     for (int i = 0; i < arrc; i++) {
         char cmd[0x080];
