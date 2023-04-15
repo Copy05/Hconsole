@@ -193,14 +193,11 @@ void subdomain_enumeration(const char* f, const char* opts)
         "films", "productions", "production", "television", "tvgo", "tvhd", "premere", "blockbuster", "primetime", "picture", "player", "stock", "fotos", "digital", "thumb", "sports",
         "esports", "e-sports", "dvd", "analog", "hdvideos", "hdvideo", "hd-video", "hd-videos", "hdmovie", "hdmovies", "hd-movie", "hd-movies",
 
-        // Piracy
-        "piracy", "pirat", "priate", "piratebay", "pirate-bay", "kinovod0", "kinovod", "kinovod1", "animevod", "lostfilms", "lordfilms", "torret",
-
         // Film 0 - 10
         "film0", "film", "film1", "film2", "film3", "film4", "film5", "film6", "film7", "film8", "film9", "film10",
 
-        // HD 0 - 10
-        "hd0", "hd", "hd1", "hd2", "hd3", "hd4", "hd5", "hd6", "hd7", "hd8", "hd9", "hd10",
+        // HD 0 - 14
+        "hd0", "hd", "hd1", "hd2", "hd3", "hd4", "hd5", "hd6", "hd7", "hd8", "hd9", "hd10", "hd11", "hd12", "hd13", "hd14", "hd1080"
 
         // [0.32] LINUX
         "kali", "ubuntu", "darwin", "arch", "deb", "debian", "superuser", "linux", "gnu", "apt", "ls", "cd", "dpkg", "mkdir", "rm", "mv", "rmdir", "sudo", "su", "ps", "process", "processes",
@@ -333,6 +330,8 @@ void subdomain_enumeration(const char* f, const char* opts)
         "psyduck-beak", "asdasd", "x2a32", "lu23xx", "lu-x23", "lu32", "lu23s", "lord-u32", "lord-u37", "lord-i17", "ghhffffhhnn", "gghhgghhg", "dradis1",
         "ru1", "ru2", "ru3", "ru4", "ru5", "ru6", "ru7", "ru8", "ru9", "ru10",
         "hhd-1", "hhd-2", "hhd-3", "hhd-4", "hhd-5", "hhd-6",
+        "piracy", "pirat", "priate", "piratebay", "pirate-bay", "kinovod0", "kinovod", "kinovod1", "animevod", "lostfilms", "lordfilms", "torret",
+        "kino", "kino1", "kino2", "kino3", "kino4", "kino5", "kino6", "kino7", "kino8", "kino9", "kino10",
 
         // Misc
         "extern", "vs", "preview", "link", "linked", "awp", "originals", "collections", 
