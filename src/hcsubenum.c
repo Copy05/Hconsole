@@ -362,22 +362,19 @@ void subdomain_enumeration(const char* f, const char* opts)
 
 #if __unix
     
-    // The Feature isn't fixed yet!!
-    printf("This feature is currently only available on Windows\n");
-    
-    /*for (int i = 0; i < arrc; i++) {
+    for (int i = 0; i < arrc; i++) {
         char cmd[0x080];
-        strcpy(cmd, "ping -c1");
+        strcpy(cmd, "host -t A ");
         strcat(cmd, subdomains[i]);
         strcat(cmd, ".");
         strcat(cmd, f);
-        strcat(cmd, " > /dev/null > 2>&1");
+        strcat(cmd, " > /dev/null");
 
         if (system(cmd) == 0x00) {
             printf("%s.%s\n", subdomains[i], f);
             founddomains++;
         }
-    }*/
+    }
 #else
     for (int i = 0; i < arrc; i++) {
         char cmd[0x080];
