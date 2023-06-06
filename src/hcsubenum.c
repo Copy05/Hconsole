@@ -347,7 +347,7 @@ void subdomain_enumeration(const char* f, const char* opts)
         "contest", "build", "this", "public", "host", "net", "online", "io", "your", "you", "box", "science", "chemie", "thanks", "ocean",
         "carrd", "sender", "direct", "directory", "fresh", "banner", "recieve", "heaven", "kitchen", "recept", "cc", "idm", 
         "idss", "ides", "ess", "iss", "filmy", "filmymeet", "ching",
-        "ching-chong", "hellish", "hell", "yts", "ssyt", "vortex0", "vortex", "vortex1", "watson", "v8", "go", "lineup",
+        "ching-chong", "hellish", "hell", "yts", "ssyt", "vortex0", "vortex", "vortex1", "watson", "v8", "go", "lineup", "fleek"
 
         // Language subdomains
         "intertional", "de", "en", "nl", "jp", "gr", "es", "au", "fr", "us", "uk", "ca", "com", "it", "es", "gg", "at", "ch", "co", "mx", "bg", "ru",

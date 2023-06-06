@@ -3,9 +3,9 @@
 Hconsole is a cross-plattform terminal designed for hackers, bug bounties and curious people.
 Use this tool responsibly and with caution.
 
-
 **Features**
 - Subdomain Enumeration
+- Port Scanning ***[UNSTABLE]***
 - User-friendly interface
 
 Hconsole is completelly maintained by the open source community.
@@ -16,7 +16,7 @@ Hconsole is completelly maintained by the open source community.
 ```bash
 git clone https://github.com/Copy05/Hconsole.git
 cd Hconsole
-sudo g++ *.c *.h
+gcc -Iinclude ./src/*.c ./src/*.h -o hc.out
 ```
 
 # Contribution

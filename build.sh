@@ -1,14 +1,14 @@
 #!/bin/bash/
 
-if [ "dpkg -s g++" ]
+if [ "dpkg -s gcc" ]
 then
     echo "Building..."
 else
-    echo "g++ has not been installed"
+    echo "gcc has not been installed"
     exit
 fi
 
-g++ -o hc.out ./src/*.c ./src/*.h
+gcc -Iinclude ./src/*.c ./src/*.h -o hc.out
 
 echo "Succsessfully built!"
 echo "Use Hconsole with caution and responsible!"
