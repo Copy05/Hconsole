@@ -11,4 +11,4 @@ fi
 gcc -Iinclude ./src/*.c ./src/*.h -o hc.out
 
 echo "Succsessfully built!"
-echo "Use Hconsole with caution and responsible!"
+echo "NOTE: Hconsole has been discontinued on Jun 6, 2023. Please stop using this Tool"

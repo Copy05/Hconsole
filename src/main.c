@@ -28,6 +28,7 @@ int main(int argc, char** argv) {
 	#if __unix
 		printf("%s@hc:~$ ", _print_user());
 	#else
+		printf("NOTE: Hconsole has been discontinued on Jun 6, 2023. Please stop using this Tool")
 		printf("hc:~$ ");
 	#endif
 		scanf("%127s%127s%127s", cmd, f, opts);
